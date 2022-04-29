@@ -36,3 +36,97 @@
     transform: rotate(360deg);
   }
 }
+
+.voice-recorder {
+  display: grid;
+  grid-template-columns: 3fr 4fr 3fr;
+  align-items: center;
+}
+
+.buttons {
+  grid-column: 2/3;
+}
+
+.tracks {
+  grid-column: 2/3;
+  text-align: center;
+}
+ol.tracks-list {
+  list-style: none;
+  display: block;
+  width: auto;
+  margin: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+li.recording {
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  background-color: #dbdbdb;
+  padding: 0.1rem 0.3rem;
+  width: auto;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  align-content: center;
+}
+
+.recording p {
+  grid-column: 2/3;
+  margin: 0;
+}
+.recording__btns {
+  display: flex;
+  grid-column: 1/2;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.recording__btns svg {
+  height: .8rem;
+  width: auto;
+}
+
+.recording__play\/pause {
+  border: none;
+  background-color: transparent;
+}
+
+.recording__delete {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn-record {
+  background-color: red;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  justify-content: center;
+  outline: none;
+  border: none;
+  border: 5px white solid;
+}
+
+.btn-record--inactive {
+  background-color: red;
+}
+
+.btn-record--recording {
+  background-color: white;
+  border-color: red;
+}
+.btn-record span {
+  display: block;
+}
